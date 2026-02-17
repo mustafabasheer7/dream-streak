@@ -1,44 +1,52 @@
-DreamStreak
+🌤 DreamStreak
 
 Discipline, but soft.
 
-DreamStreak is a cross-platform discipline tracking app built for people who want to stay consistent during a cut or habit challenge. It is not a calorie tracker. It does not count macros. It tracks whether you showed up and executed your non-negotiables.
+DreamStreak is a cross-platform discipline tracking app designed for people who want to stay consistent during a cut, habit challenge, or focused performance phase.
 
-The goal is simple:
-Set clear daily standards.
-Check in once per day.
-Protect your streak.
-Finish the challenge clean.
+It is not a calorie tracker.
+It does not track macros.
+It tracks whether you showed up and executed your non-negotiables.
 
-Why this exists
+✨ The Idea
 
-During a cut or any focused phase, the real battle is not calories. It is consistency.
+Consistency is the real challenge during a cut.
 
-Most fitness apps are either:
+Most fitness apps focus on:
 
-Overloaded with nutrition tracking
+Calories
 
-Dark, aggressive “grindset” style
+Macros
 
-Or built around journalling and motivation essays
+Dark, aggressive “grindset” UI
 
-DreamStreak focuses on behaviour. It gives you:
+Or long motivational journalling
 
-A structured challenge
+DreamStreak focuses on behaviour.
 
-A clean daily check-in
+You:
 
-Visual progress
+Set clear daily standards
 
-Calm, smart reminders
+Check in once per day
 
-A minimal mascot that reacts to your performance
+Protect your streak
 
-It keeps you accountable without being overwhelming.
+Finish the challenge clean
 
-Core Concept
+That’s it.
 
-You create a challenge with a defined duration and a set of daily goals. Some goals are marked as non-negotiable. Your streak continues only if those non-negotiables are completed.
+🎯 Core Concept
+
+You create a challenge with:
+
+A defined duration (7–90 days or custom)
+
+A set of daily goals
+
+Selected non-negotiables
+
+Your streak continues only if your non-negotiables are completed.
 
 Each day you:
 
@@ -50,36 +58,32 @@ Close the day
 
 Protect the chain
 
-The app tracks:
+🚀 Features
+🧱 Challenge Setup
 
-Current streak
+Choose challenge duration (7, 14, 30, 60, 90, or custom)
 
-Best streak
+Add daily goals:
 
-Daily completion score
+Binary (Done / Not done)
 
-Heatmap of your consistency
-
-Goal adherence percentages
-
-Challenge progress
-
-Features
-Challenge Setup
-
-Choose duration (7, 14, 30, 60, 90, or custom)
-
-Add daily goals (binary or numeric)
+Numeric (e.g., steps, sleep hours)
 
 Mark goals as non-negotiable
 
-Select reminder style (Coach, Rival, Calm)
+Select reminder style:
+
+Coach
+
+Rival
+
+Calm
 
 Set reminder times
 
-Daily Check-In
+📅 Daily Check-In
 
-Clean checklist interface
+Clean, minimal checklist
 
 Progress indicator
 
@@ -87,37 +91,53 @@ Mascot reacts as goals are completed
 
 One-tap day completion
 
-Streak System
+No clutter
+
+🔥 Streak System
 
 Streak continues when all non-negotiables are completed
 
-Visual streak card
+Current streak + best streak
 
-Milestone celebrations
+Milestone celebrations (3, 7, 14, 30, 60, 90)
 
-Optional streak shield (future feature)
+Optional streak shield (planned feature)
 
-Progress Visualisation
+📊 Progress Visualisation
 
 Heatmap calendar
 
-Goal adherence bars
+Goal adherence percentage bars
 
-Milestone tracking
+Streak card
 
 Challenge countdown
 
-Reminder System
+Milestone timeline
+
+🔔 Reminder System
 
 No journalling. No typing motivational essays.
 
-Users select a reminder style:
+Users select a reminder mode:
 
-Coach: direct and grounded
+Coach
 
-Rival: competitive and firm
+Direct. Grounded. Clear.
 
-Calm: supportive and low-pressure
+“2 goals left. Close the day clean.”
+
+Rival
+
+Competitive. Firm.
+
+“Day 9 of 30. Don’t break the chain.”
+
+Calm
+
+Supportive. Low pressure.
+
+“Quick check-in. Finish strong.”
 
 Reminders are generated dynamically based on:
 
@@ -129,13 +149,13 @@ Time of day
 
 Challenge progress
 
-Design Philosophy
+🎨 Design Philosophy
 
 DreamStreak uses a Pastel Dreamland Adventure aesthetic.
 
 Warm off-white backgrounds
 
-Soft lavender and sky accents
+Soft lavender + sky accents
 
 Subtle gradients
 
@@ -145,9 +165,19 @@ Light shadows
 
 Calm typography
 
-The visual identity is gentle but structured.
+Plenty of whitespace
 
-The minimal blob mascot appears throughout the app with different expressions:
+It feels gentle, structured, and modern.
+
+Not aggressive.
+Not childish.
+Not overwhelming.
+
+🫧 The Mascot
+
+A minimal blob mascot appears throughout the app.
+
+Expressions:
 
 Neutral
 
@@ -161,13 +191,23 @@ Side-eye
 
 Oof
 
-It adds personality without turning the app into a cartoon.
+It reacts to:
 
-Tech Stack
+Goal completion
+
+Milestones
+
+Streak breaks
+
+End-of-day nudges
+
+The mascot adds warmth without distracting from the discipline loop.
+
+🏗 Tech Stack
 
 DreamStreak is built as a cross-platform system.
 
-Web
+🌐 Web
 
 Next.js
 
@@ -175,7 +215,7 @@ TypeScript
 
 Tailwind CSS
 
-Mobile
+📱 Mobile
 
 Expo (React Native)
 
@@ -187,11 +227,11 @@ expo-notifications
 
 react-native-svg
 
-Backend
+🗄 Backend
 
 Supabase (Auth + Postgres)
 
-Shared Logic
+📦 Shared Logic
 
 Shared TypeScript types
 
@@ -201,49 +241,68 @@ Streak calculation logic
 
 Reminder message generator
 
-The goal is one backend, shared logic, and consistent data across web and mobile.
+🧠 Architecture Overview
+apps/
+web/ → Next.js application
+mobile/ → Expo application
 
-Architecture Overview
+packages/
+shared/ → Business logic, streak algorithm, types
+ui/ → Design tokens & reusable components
 
-apps/web → Next.js app
+backend/
+Supabase → Auth + Database
 
-apps/mobile → Expo app
+One backend.
+Shared logic across platforms.
+Consistent data everywhere.
 
-packages/shared → business logic and types
+🛣 Roadmap
+Phase 1 – Web MVP
 
-Supabase → authentication and database
+Challenge setup
 
-The streak algorithm and reminder generator are shared across platforms to ensure consistent behaviour.
+Daily check-in
 
-Project Status
+Streak logic
 
-This project is currently in active development.
+Progress heatmap
 
-Planned phases:
+Basic reminders
 
-Web MVP (challenge setup, daily check-in, streak logic, progress)
+Phase 2 – Mobile App
 
-Mobile app with push notifications
+Expo implementation
 
-Mascot animation system
+Push notifications
 
-Theme support
+Shared backend sync
 
-Advanced streak modes and weekly recap
+Phase 3 – Polish
 
-Vision
+Expanded mascot expressions
 
-DreamStreak is designed to make discipline feel structured, calm, and aesthetic.
+Milestone animations
 
-It is built for:
+Theme switcher
 
-Cutting phases
+Weekly recap system
 
-Habit challenges
+Advanced streak modes
 
-Consistency training
+🧭 Vision
 
-Anyone who wants to finish what they start
+DreamStreak is built for people who:
+
+Want to finish what they start
+
+Care about consistency
+
+Prefer calm design over aggressive grind culture
+
+Value structure without complexity
+
+It makes discipline aesthetic.
 
 No chaos.
 No overcomplication.
